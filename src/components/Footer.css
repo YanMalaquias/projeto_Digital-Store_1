@@ -1,0 +1,20 @@
+.footer { background: var(--dark-gray); color: var(--white); padding: 40px 0 24px; margin-top: 80px; }
+
+.footer__columns { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 48px; }
+
+.footer__brand { display: flex; flex-direction: column; gap: 24px; }
+.footer__brand img[alt="Digital Store"] { max-width: 100%; height: auto; }
+.footer__brand p { font-size: 16px; line-height: 1.6; max-width: 360px; }
+.footer__socials { display: flex; gap: 16px; }
+.footer__socials img { width: 24px; height: 24px; }
+
+.info-group h4 { font-size: 16px; font-weight: 700; margin-bottom: 20px; color: var(--white); }
+.info-group ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.info-group a { color: var(--white); font-size: 14px; text-decoration: none; line-height: 1.5; }
+.info-group a:hover { text-decoration: underline; }
+
+.footer hr { border: 0; border-top: 1px solid var(--dark-gray-3); margin: 40px 0 20px; }
+.footer__copy { text-align: center; font-size: 14px; color: var(--white); }
+
+@media (max-width: 900px) { .footer__columns { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .footer__columns { grid-template-columns: 1fr; } }

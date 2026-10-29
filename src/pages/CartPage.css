@@ -1,0 +1,25 @@
+.cart-page { padding-top: 32px; }
+.cart-page__empty { padding: 36px; border-radius: 8px; background: var(--white); text-align: center; }
+.cart-page__empty p { margin-bottom: 16px; }
+.cart-page__empty a, .cart-item__details button { color: var(--primary); font-weight: 700; }
+.cart-page__layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 24px; align-items: start; }
+.cart-page__items, .cart-summary { background: var(--white); border-radius: 8px; padding: 24px; }
+.cart-item { display: grid; grid-template-columns: 112px minmax(0, 1fr) auto auto; gap: 20px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--light-gray-2); }
+.cart-item:first-child { padding-top: 0; }
+.cart-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.cart-item > img { width: 112px; height: 112px; object-fit: cover; border-radius: 4px; background: var(--light-gray-3); }
+.cart-item__details h2 { color: var(--dark-gray); font-size: 16px; margin-bottom: 8px; }
+.cart-item__details p { color: var(--dark-gray-3); font-size: 13px; margin-top: 4px; }
+.cart-item__details button { margin-top: 10px; border: 0; background: none; text-decoration: underline; }
+.cart-item__quantity { display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+.cart-item__quantity input { width: 64px; padding: 8px; border: 1px solid var(--light-gray-2); border-radius: 4px; }
+.cart-item > strong { color: var(--dark-gray); white-space: nowrap; }
+.cart-summary { display: flex; flex-direction: column; gap: 16px; }
+.cart-summary h2 { color: var(--dark-gray); font-size: 20px; }
+.cart-summary > div { display: flex; justify-content: space-between; gap: 16px; font-size: 14px; }
+.cart-summary > div:last-of-type { color: var(--dark-gray); font-size: 18px; }
+.cart-summary hr { border: 0; border-top: 1px solid var(--light-gray-2); }
+.cart-summary p { color: var(--dark-gray-3); font-size: 12px; line-height: 1.5; }
+.cart-summary > a { display: grid; place-items: center; min-height: 48px; color: var(--white); background: var(--primary); border-radius: 4px; text-decoration: none; font-weight: 700; }
+@media (max-width: 850px) { .cart-page__layout { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .cart-item { grid-template-columns: 80px 1fr; gap: 12px; } .cart-item > img { width: 80px; height: 80px; } .cart-item__quantity { grid-column: 2; } .cart-item > strong { grid-column: 2; } }
