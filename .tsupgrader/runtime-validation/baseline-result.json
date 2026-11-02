@@ -1,0 +1,94 @@
+{
+  "planHash": "b68512dc031d8c4ccb7b83fc2b0ff69f143962d235da50a45992374dae9873a0",
+  "phase": "baseline",
+  "recordedAtUtc": "2026-11-02T15:29:23.1350436Z",
+  "retryCount": 0,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 4754,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "vite-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E drip-store@1.0.0 build\r\n\u003E vite build\r\n\r\n\u001B[36mvite v5.4.21 \u001B[32mbuilding for production...\u001B[36m\u001B[39m\r\ntransforming...\r\n\u001B[32m\u2713\u001B[39m 85 modules transformed.\r\nrendering chunks...\r\ncomputing gzip size...\r\n\u001B[2mdist/\u001B[22m\u001B[32mindex.html                       \u001B[39m\u001B[1m\u001B[2m  0.66 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip:  0.36 kB\u001B[22m\r\n\u001B[2mdist/\u001B[22m\u001B[32massets/logo-footer-kViJRG-I.svg  \u001B[39m\u001B[1m\u001B[2m 12.30 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip:  5.22 kB\u001B[22m\r\n\u001B[2mdist/\u001B[22m\u001B[32massets/logo-header-B94V3aKN.svg  \u001B[39m\u001B[1m\u001B[2m 12.30 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip:  5.22 kB\u001B[22m\r\n\u001B[2mdist/\u001B[22m\u001B[35massets/index-D3CCQ-pQ.css        \u001B[39m\u001B[1m\u001B[2m 29.05 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip:  5.95 kB\u001B[22m\r\n\u001B[2mdist/\u001B[22m\u001B[36massets/index-C4STmV5n.js         \u001B[39m\u001B[1m\u001B[2m218.04 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip: 70.31 kB\u001B[22m\r\n\u001B[32m\u2713 built in 1.10s\u001B[39m\r\n",
+        "durationMs": 2048
+      },
+      {
+        "name": "home-page-200",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!doctype html\u003E\n\u003Chtml lang=\u0022pt-BR\u0022\u003E\n  \u003Chead\u003E\n    \u003Cscript type=\u0022module\u0022\u003Eimport { injectIntoGlobalHook } from \u0022/@react-refresh\u0022;\ninjectIntoGlobalHook(window);\nwindow.$RefreshReg$ = () =\u003E {};\nwindow.$RefreshSig$ = () =\u003E (type) =\u003E type;\u003C/script\u003E\n\n    \u003Cscript type=\u0022module\u0022 src=\u0022/@vite/client\u0022\u003E\u003C/script\u003E\n\n    \u003Cmeta charset=\u0022UTF-8\u0022 /\u003E\n    \u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1.0\u0022 /\u003E\n    \u003Ctitle\u003EDigital Store\u003C/title\u003E\n    \u003Clink rel=\u0022preconnect\u0022 href=\u0022https://fonts.googleapis.com\u0022 /\u003E\n    \u003Clink rel=\u0022preconnect\u0022 href=\u0022https://fonts.gstatic.com\u0022 crossorigin /\u003E\n    \u003Clink href=\u0022https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700\u0026display=swap\u0022 rel=\u0022stylesheet\u0022 /\u003E\n  \u003C/head\u003E\n  \u003Cbody\u003E\n    \u003Cdiv id=\u0022root\u0022\u003E\u003C/div\u003E\n    \u003Cscript type=\u0022module\u0022 src=\u0022/src/main.jsx\u0022\u003E\u003C/script\u003E\n  \u003C/body\u003E\n\u003C/html\u003E\n",
+        "durationMs": 57
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "ci"
+        ],
+        "cwd": "C:\\Users\\kaell\\Downloads\\drip-store\\drip-store",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "devServer",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "dev",
+          "--",
+          "--host",
+          "127.0.0.1"
+        ],
+        "cwd": "C:\\Users\\kaell\\Downloads\\drip-store\\drip-store",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "vite-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\kaell\\Downloads\\drip-store\\drip-store",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "home-page-200",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "dev",
+          "--",
+          "--host",
+          "127.0.0.1"
+        ],
+        "cwd": "C:\\Users\\kaell\\Downloads\\drip-store\\drip-store",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}
